@@ -9,7 +9,7 @@ puts "What calculation would you like to do?
   add: 1, 
   subtract: 2, 
   multiply: 3,
-  divide: 4)"
+  divide: 4"
 function = gets.chomp.to_i
 
 puts "You have chosen #{function}."
