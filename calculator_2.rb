@@ -27,7 +27,7 @@ if function == 1
   elsif function == 3 
     puts calculation = (number1.to_i * number2.to_i)
   elsif function == 4 
-    puts calculation = (number1.to_i / number2.to_i)
+    puts calculation = (number1.to_f / number2.to_f)
   else 
     puts "You made an invalid entry. Please try again."
 end
