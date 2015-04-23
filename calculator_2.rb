@@ -5,8 +5,11 @@ puts "Use this calculator to add, subtract, multiply or divide."
 function = 1 || 2 || 3 || 4
 calculation = ()
 
-puts "What calculation would you like to do? (add: 1, 
-  subtract: 2, multiply: 3,divide: 4)"
+puts "What calculation would you like to do? 
+  add: 1, 
+  subtract: 2, 
+  multiply: 3,
+  divide: 4)"
 function = gets.chomp.to_i
 
 puts "You have chosen #{function}."
