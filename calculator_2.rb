@@ -2,9 +2,6 @@ loop do
 
 puts "Use this calculator to add, subtract, multiply or divide."
 
-function = 1 || 2 || 3 || 4
-calculation = ()
-
 puts "What calculation would you like to do? 
   add: 1, 
   subtract: 2, 
@@ -21,22 +18,22 @@ puts "Pick another number."
   number2 = gets.chomp
 
 if function == 1 
-    puts calculation = (number1.to_i + number2.to_i)
-  elsif function == 2 
-    puts calculation = (number1.to_i - number2.to_i)
-  elsif function == 3 
-    puts calculation = (number1.to_i * number2.to_i)
-  elsif function == 4 
-    puts calculation = (number1.to_f / number2.to_f)
-  else 
-    puts "You made an invalid entry. Please try again."
+  calculation = (number1.to_i + number2.to_i)
+elsif function == 2 
+  calculation = (number1.to_i - number2.to_i)
+elsif function == 3 
+   calculation = (number1.to_i * number2.to_i)
+elsif function == 4 
+   calculation = (number1.to_f / number2.to_f)
+else 
+puts "You made an invalid entry. Please try again."
 end
 
 puts "Your result is #{calculation}."
 
 puts "Would you like to have another calculation? (y, n)"
 answer = gets.chomp
-  if answer != "y"
-    break
-  end
+if answer != "y"
+break
+end
 end
